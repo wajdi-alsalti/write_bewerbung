@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>944</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>554</width>
+    <height>934</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>944</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Templete</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res2.qrc">
+    <normaloff>:/images2/images/window.png</normaloff>:/images2/images/window.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+	border: 0.3px solid rgb(0, 0, 0);
+	border-radius : 10px;
+	padding-left:5px;
+	height:26px;
+	
+}
+QLineEdit::hover{
+	border:2px solid rgb(0, 255, 255);
+}
+QLineEdit::focus{
+	border:2px solid  rgb(0, 170, 255);
+}
+/*QLabel{
+	font-family : Sitka Text
+}*/
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="1">
+     <widget class="QWidget" name="widgetform" native="true">
+      <layout class="QGridLayout" name="gridLayout_8" rowminimumheight="0,0,0,0,0,0,0">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item row="1" column="0">
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="text_label">
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>370</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Text</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border:1px solid rgb(195, 194, 193);
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt; Main Letter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="margin">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="s_label">
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>91</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Text</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border:1px solid rgb(195, 194, 193);
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;City, Today Date&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Subject &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="margin">
+          <number>12</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="Line" name="line_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="firma_label">
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>151</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Text</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border:1px solid rgb(195, 194, 193);
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Company Name&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Company Address&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Company Street&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="margin">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="your_label">
+         <property name="minimumSize">
+          <size>
+           <width>500</width>
+           <height>173</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Sitka Text</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border:1px solid rgb(195, 194, 193);
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Your Name&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Your Street&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Your Email&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Your TN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="margin">
+          <number>11</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="6" column="0">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <item row="4" column="0">
+         <widget class="QLineEdit" name="firma_str_line">
+          <property name="placeholderText">
+           <string>Street</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLineEdit" name="firma_address_line">
+          <property name="placeholderText">
+           <string>Address</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="rb_L_firma">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res2.qrc">
+              <normaloff>:/images2/images/left.png</normaloff>:/images2/images/left.png</iconset>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb_C_firma">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res2.qrc">
+              <normaloff>:/images2/images/center.png</normaloff>:/images2/images/center.png</iconset>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb_R_firma">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="res2.qrc">
+              <normaloff>:/images2/images/right.png</normaloff>:/images2/images/right.png</iconset>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1" alignment="Qt::AlignHCenter">
+         <widget class="QToolButton" name="f_colorBtn">
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Color</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res2.qrc">
+            <normaloff>:/images2/images/color.png</normaloff>:/images2/images/color.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="styleComp_label">
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Style</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="firma_name_line">
+          <property name="placeholderText">
+           <string>Company Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" alignment="Qt::AlignHCenter">
+         <widget class="QToolButton" name="f_fontBtn">
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Font</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res2.qrc">
+            <normaloff>:/images2/images/font.png</normaloff>:/images2/images/font.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" alignment="Qt::AlignHCenter|Qt::AlignBottom">
+         <widget class="QLabel" name="comp_label">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <pointsize>11</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="midLineWidth">
+           <number>0</number>
+          </property>
+          <property name="text">
+           <string>Company Information</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="margin">
+           <number>-1</number>
+          </property>
+          <property name="indent">
+           <number>-1</number>
+          </property>
+          <property name="openExternalLinks">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="your2_city_line">
+          <property name="placeholderText">
+           <string>City</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="styleInfo_label">
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Style</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" alignment="Qt::AlignHCenter">
+         <widget class="QToolButton" name="your_fontBtn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>26</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Font</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res2.qrc">
+            <normaloff>:/images2/images/font.png</normaloff>:/images2/images/font.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2" alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="info_label">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>17</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <pointsize>11</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Your Information</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3" alignment="Qt::AlignHCenter">
+         <widget class="QToolButton" name="your_colorBtn">
+          <property name="minimumSize">
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Color</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res2.qrc">
+            <normaloff>:/images2/images/color.png</normaloff>:/images2/images/color.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLineEdit" name="your_zipcode_line">
+          <property name="maximumSize">
+           <size>
+            <width>67</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Zip Code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLineEdit" name="your1_name_line">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>253</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="placeholderText">
+           <string>Your Name &amp; Last Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLineEdit" name="your3_street_line">
+          <property name="placeholderText">
+           <string>Street</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLineEdit" name="your4_email_line">
+          <property name="placeholderText">
+           <string>Email</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLineEdit" name="your5_tn_line">
+          <property name="placeholderText">
+           <string>Telephone Number</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QRadioButton" name="rb_L_your">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="res2.qrc">
+                <normaloff>:/images2/images/left.png</normaloff>:/images2/images/left.png</iconset>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="rb_C_your">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="res2.qrc">
+                <normaloff>:/images2/images/center.png</normaloff>:/images2/images/center.png</iconset>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="rb_R_your">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="res2.qrc">
+                <normaloff>:/images2/images/right.png</normaloff>:/images2/images/right.png</iconset>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup</string>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="7" column="0">
+       <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,0,0,0,0">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>7</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>4</number>
+        </property>
+        <item row="3" column="0" colspan="5">
+         <widget class="QTextEdit" name="main_text">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+border:1px solid rgb(195, 194, 193);
+border-radius:10px</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="send_label">
+          <property name="maximumSize">
+           <size>
+            <width>335</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Send to :</string>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QRadioButton" name="mr_rb">
+          <property name="maximumSize">
+           <size>
+            <width>89</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <pointsize>7</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Herr</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="4">
+         <widget class="QLineEdit" name="sendTo_line">
+          <property name="placeholderText">
+           <string>The recipient's name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QRadioButton" name="plural_rb">
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <pointsize>7</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Plural</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QRadioButton" name="miss_rb">
+          <property name="font">
+           <font>
+            <family>Sitka Text</family>
+            <pointsize>7</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Frau</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="8" column="1">
+       <widget class="Line" name="line_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="Line" name="line_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_6" rowstretch="0,0,0,0">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>7</number>
+          </property>
+          <item row="0" column="0" alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="sub_label">
+            <property name="font">
+             <font>
+              <family>Sitka Text</family>
+              <pointsize>11</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Subject</string>
+            </property>
+            <property name="margin">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLineEdit" name="subject_line">
+            <property name="minimumSize">
+             <size>
+              <width>246</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>47</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="2">
+           <widget class="QToolButton" name="s_colorBtn">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Color</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res2.qrc">
+              <normaloff>:/images2/images/color.png</normaloff>:/images2/images/color.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="styleSub_label">
+            <property name="font">
+             <font>
+              <family>Sitka Text</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Style</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QToolButton" name="s_fontBtn">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Font</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res2.qrc">
+              <normaloff>:/images2/images/font.png</normaloff>:/images2/images/font.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>52</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="0">
+           <widget class="QDateEdit" name="dateEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-radius : 10px;
+padding-left:15px</string>
+            </property>
+            <property name="dateTime">
+             <datetime>
+              <hour>0</hour>
+              <minute>0</minute>
+              <second>0</second>
+              <year>2021</year>
+              <month>1</month>
+              <day>1</day>
+             </datetime>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_as_docx"/>
+    <addaction name="actionSave_as_pdf"/>
+    <addaction name="actionPrivew"/>
+    <addaction name="actionEars"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menupdf_Tools">
+    <property name="title">
+     <string>pdf Tools</string>
+    </property>
+    <addaction name="actionMerge"/>
+    <addaction name="actionSplit"/>
+   </widget>
+   <widget class="QMenu" name="menuExamples">
+    <property name="title">
+     <string>Examples</string>
+    </property>
+    <widget class="QMenu" name="menuk_ndigung">
+     <property name="title">
+      <string>Kündigung</string>
+     </property>
+     <addaction name="actioninternt"/>
+     <addaction name="actionhandy"/>
+     <addaction name="actionwohnung"/>
+     <addaction name="actionarbeit"/>
+    </widget>
+    <addaction name="actionBewerbung"/>
+    <addaction name="menuk_ndigung"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <widget class="QMenu" name="menuLanguages">
+     <property name="title">
+      <string>Languages</string>
+     </property>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionGermany"/>
+    </widget>
+    <addaction name="menuLanguages"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menupdf_Tools"/>
+   <addaction name="menuExamples"/>
+   <addaction name="menuSetting"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>34</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSave_as_docx"/>
+   <addaction name="actionSave_as_pdf"/>
+   <addaction name="separator"/>
+   <addaction name="actionMerge"/>
+   <addaction name="actionSplit"/>
+   <addaction name="separator"/>
+   <addaction name="actionPrivew"/>
+   <addaction name="actionEars"/>
+  </widget>
+  <action name="actionSave_as_docx">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/save.png</normaloff>:/images2/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as .docx </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_as_pdf">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/pdf.png</normaloff>:/images2/images/pdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as pdf</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionMerge">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/merge.png</normaloff>:/images2/images/merge.png</iconset>
+   </property>
+   <property name="text">
+    <string>Merge</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionSplit">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/split.png</normaloff>:/images2/images/split.png</iconset>
+   </property>
+   <property name="text">
+    <string>Split</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionpreview">
+   <property name="text">
+    <string>preview</string>
+   </property>
+  </action>
+  <action name="actionPrivew">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/preview.png</normaloff>:/images2/images/preview.png</iconset>
+   </property>
+   <property name="text">
+    <string>Privew</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionBewerbung">
+   <property name="text">
+    <string>Bewerbung</string>
+   </property>
+  </action>
+  <action name="actioninternt">
+   <property name="text">
+    <string>Internet</string>
+   </property>
+  </action>
+  <action name="actionhandy">
+   <property name="text">
+    <string>Handy</string>
+   </property>
+  </action>
+  <action name="actionwohnung">
+   <property name="text">
+    <string>Wohnung</string>
+   </property>
+  </action>
+  <action name="actionarbeit">
+   <property name="text">
+    <string>Arbeit</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionGermany">
+   <property name="text">
+    <string>Germany</string>
+   </property>
+  </action>
+  <action name="actionEars">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/earse.png</normaloff>:/images2/images/earse.png</iconset>
+   </property>
+   <property name="text">
+    <string>Earse</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="res2.qrc">
+     <normaloff>:/images2/images/exit.png</normaloff>:/images2/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>your1_name_line</tabstop>
+  <tabstop>your_zipcode_line</tabstop>
+  <tabstop>your2_city_line</tabstop>
+  <tabstop>your3_street_line</tabstop>
+  <tabstop>your4_email_line</tabstop>
+  <tabstop>your5_tn_line</tabstop>
+  <tabstop>firma_name_line</tabstop>
+  <tabstop>firma_address_line</tabstop>
+  <tabstop>firma_str_line</tabstop>
+  <tabstop>subject_line</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>sendTo_line</tabstop>
+  <tabstop>main_text</tabstop>
+  <tabstop>your_colorBtn</tabstop>
+  <tabstop>rb_L_your</tabstop>
+  <tabstop>rb_C_your</tabstop>
+  <tabstop>rb_R_your</tabstop>
+  <tabstop>f_fontBtn</tabstop>
+  <tabstop>f_colorBtn</tabstop>
+  <tabstop>rb_L_firma</tabstop>
+  <tabstop>rb_C_firma</tabstop>
+  <tabstop>rb_R_firma</tabstop>
+  <tabstop>s_fontBtn</tabstop>
+  <tabstop>s_colorBtn</tabstop>
+  <tabstop>mr_rb</tabstop>
+  <tabstop>miss_rb</tabstop>
+  <tabstop>plural_rb</tabstop>
+  <tabstop>your_fontBtn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="res2.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

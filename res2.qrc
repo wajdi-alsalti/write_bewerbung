@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="images2">
+    <file>images/earse.png</file>
+    <file>images/center.png</file>
+    <file>images/color.png</file>
+    <file>images/done.png</file>
+    <file>images/error.png</file>
+    <file>images/exit.png</file>
+    <file>images/font.png</file>
+    <file>images/left.png</file>
+    <file>images/merge.png</file>
+    <file>images/pdf.png</file>
+    <file>images/preview.png</file>
+    <file>images/right.png</file>
+    <file>images/save.png</file>
+    <file>images/split.png</file>
+    <file>images/window.png</file>
+  </qresource>
+</RCC>
