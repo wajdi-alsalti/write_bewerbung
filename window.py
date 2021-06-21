@@ -463,7 +463,7 @@ class MainWindow(QMainWindow):
     ######################################
     # pdf functions split merge and convert from docx
     def pdfConverter(self):
-        fileIsOpen = isOpen("WINWORD.EXE")
+        fileIsOpen = isOpen("WINWORD.EXE") # return true if the file is open
         try:
             if not fileIsOpen:
                 convert_to_pdf(self.openDialogFile())

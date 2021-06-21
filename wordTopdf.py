@@ -23,26 +23,27 @@ def pdfMerge():
     filename = QFileDialog.getOpenFileNames(filter="*.pdf")
     pdfsFiles = filename[0] # a list of selected files
     if pdfsFiles: # check if the list not empty
-        merger = PdfFileMerger()
+        merger = PdfFileMerger(strict=False)
+        filenamePath = QFileDialog.getSaveFileName(dir="merged") # return a path where we need to save the file
         for file in pdfsFiles:
             merger.append(file)
-        merger.write("merged.pdf")
+        merger.write("{}.pdf".format(filenamePath[0]))
         merger.close()
     else:
         raise IOError
 
 
 def pdfSplitter():
-    """open file dialog and chose pfd file to split"""
+    """open file dialog and chose pdf file to split"""
     filename = QFileDialog.getOpenFileNames(filter="*.pdf")
     pdfsFiles = filename[0][0]
     if pdfsFiles: # check if the list not empty
         fileName = os.path.splitext(os.path.basename(pdfsFiles))[0]
-        pdf = PdfFileReader(pdfsFiles)
+        pdf = PdfFileReader(pdfsFiles,strict=False)
+        filenamePath = QFileDialog.getSaveFileName(dir="split") # return a path where we need to save the file
         for page in range(pdf.getNumPages()):
             pdf_writer = PdfFileWriter()
             pdf_writer.addPage(pdf.getPage(page))
-            output_filename = '{}_page_{}.pdf'.format(
-                fileName, page+1)
+            output_filename = '{} {}_page_{}.pdf'.format(filenamePath[0],fileName, page+1)
             with open(output_filename, 'wb') as out:
                 pdf_writer.write(out)
