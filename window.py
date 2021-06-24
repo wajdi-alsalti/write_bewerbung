@@ -7,10 +7,12 @@ from PySide2.QtWidgets import QAction, QApplication, QColorDialog, QCompleter, Q
     QFontDialog,QMainWindow, QMessageBox
 from gui import Ui_MainWindow
 from writeWordFile import BewerbungDocx
-from wordTopdf import pdfMerge as pM, pdfSplitter as pS,convert_to_pdf
+from wordTopdf import pdfSplitter as pS,convert_to_pdf
 from textExamples import arbeitBewerbung,kundigungarbeit,kundigungInernet,kundigungWohnung,kundigungHandy
 from languages import *
 from programIsOpen import checkIfProgrammeOpen as isOpen
+sys.path.append(r"C:\Users\wajdi\PycharmProjects\write_bewerbung\mergeWindow")
+from mergeWindow.window import Open
 
 
 # how to load the gui
@@ -474,14 +476,9 @@ class MainWindow(QMainWindow):
         except Exception as e:
             print(e)
 
-
     def pdfMerge(self):
-        try:
-            pM()
-            self.popMessage("The file  merged successful","Done","images/done.png")
-        except Exception:
-            pass
-        # TODO: create a widget to add files need to merged
+        self.openMergeWindow = Open() # open the merge window
+        self.openMergeWindow.show()
 
     def pdfSplit(self):
         try:
