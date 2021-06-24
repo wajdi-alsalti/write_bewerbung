@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Merge Files</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res2.qrc">
+    <normaloff>:/images2/images/merge.png</normaloff>:/images2/images/merge.png</iconset>
+  </property>
+  <widget class="QPushButton" name="add_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>180</y>
+     <width>193</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="remove_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>17</y>
+     <width>311</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="up_btn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>27</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res2.qrc">
+     <normaloff>:/images2/images/up arrow.png</normaloff>:/images2/images/up arrow.png</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="down_btn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>140</y>
+     <width>27</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../res2.qrc">
+     <normaloff>:/images2/images/down arrow.png</normaloff>:/images2/images/down arrow.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="mergeWidget.qrc"/>
+  <include location="../res2.qrc"/>
+ </resources>
+ <connections/>
+</ui>
