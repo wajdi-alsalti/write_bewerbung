@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="images2">
+    <file>images/down arrow.png</file>
+    <file>images/up arrow.png</file>
     <file>images/earse.png</file>
     <file>images/center.png</file>
     <file>images/color.png</file>
